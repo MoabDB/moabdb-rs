@@ -1,0 +1,21 @@
+// Yur boi Jackson Coxson
+// Property of MoabDB
+
+syntax = "proto3";
+
+message Request {
+    string symbol = 1;
+    string datatype = 2;
+    uint32 start = 3;
+    uint32 end = 4;
+    string username = 5;
+    string token = 6;
+    reserved 7 to 15;
+}
+
+message Response {
+    uint32 code = 1;
+    string message = 2;
+    bytes data = 3;
+    reserved 4 to 15;
+}
