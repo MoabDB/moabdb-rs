@@ -1,5 +1,6 @@
 // Jackson Coxson
 
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Credentials {
     pub username: String,
     pub token: String,

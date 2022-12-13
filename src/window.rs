@@ -2,6 +2,7 @@
 
 use chrono::NaiveDateTime;
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Window {
     pub start: NaiveDateTime,
     pub end: NaiveDateTime,
